@@ -85,9 +85,13 @@ Next, I configured inter-VLAN routing to enable communication between different 
    MLS(config)# name Faculty
    ```
 
-   <p align="center">
+<br/>
+
+<p align="center">
   <img src="https://github.com/user-attachments/assets/045cd89e-0d74-4248-a5dc-50867f7f8ffd" height="70%" width="70%">
 </p>
+
+
 
 2. Then, I configured and activated the SVI interfaces:
 
@@ -96,7 +100,9 @@ Next, I configured inter-VLAN routing to enable communication between different 
    MLS(config-if)# ip address 192.168.10.254 255.255.255.0
    ```
 
-   <p align="center">
+<br/>
+
+<p align="center">
   <img src="https://github.com/user-attachments/assets/a5022992-4b0e-4aa6-b796-feecdf472de8" height="70%" width="70%">
 </p>
 
@@ -115,6 +121,7 @@ Now it was time to configure trunking on the interfaces.
    MLS(config-if)# switchport trunk native vlan 99
    MLS(config-if)# switchport trunk encapsulation dot1q
    ```
+   
   <p align="center">
   <img src="https://github.com/user-attachments/assets/5f5eede5-f7e4-4599-ab48-8a733eae06d2" height="70%" width="70%">
 </p>
